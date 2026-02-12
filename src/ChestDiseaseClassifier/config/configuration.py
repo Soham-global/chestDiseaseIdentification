@@ -1,6 +1,6 @@
 import os
 from ChestDiseaseClassifier.constants import *
-from ChestDiseaseClassifier.utils.common import read_yaml, create_directories
+from ChestDiseaseClassifier.utils.common import read_yaml, create_directories, save_json
 from ChestDiseaseClassifier.entity.config_entity import (
     DataIngestionConfig,
     PrepareBaseModelConfig,
@@ -29,7 +29,7 @@ class ConfigurationManager:
         data_ingestion_config = DataIngestionConfig(
             root_dir=config.root_dir,
             source_URL=config.source_URL,
-            local_data_file_path=config.local_data_file_path, 
+            local_data_file = config.local_data_file, 
             unzip_dir=config.unzip_dir 
         )
 
@@ -85,7 +85,7 @@ class ConfigurationManager:
         eval_config = EvaluationConfig(
             path_of_model="artifacts/training/model.h5",
             training_data="artifacts/data_ingestion/Chest-CT-Scan-data",
-            mlflow_uri="https://dagshub.com/entbappy/chest-Disease-Classification-MLflow-DVC.mlflow",
+            mlflow_uri="https://dagshub.com/magiciancoder1/chestDiseaseIdentification.mlflow",
             all_params=self.params,
             params_image_size=self.params.IMAGE_SIZE,
             params_batch_size=self.params.BATCH_SIZE

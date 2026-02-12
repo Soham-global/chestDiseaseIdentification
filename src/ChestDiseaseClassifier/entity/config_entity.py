@@ -5,7 +5,7 @@ from pathlib import Path
 class DataIngestionConfig:
     root_dir : Path
     source_URL : str
-    local_data_file_path : Path
+    local_data_file : Path
     unzip_dir : Path
 
 @dataclass(frozen=True)
