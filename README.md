@@ -457,8 +457,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Your Name**
 
-- GitHub: [@yourusername](https://github.com/Soham-global)
-- LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/sohamkalsi/)
+- GitHub: (https://github.com/Soham-global)
+- LinkedIn: (https://www.linkedin.com/in/sohamkalsi/)
 
 ---
 
