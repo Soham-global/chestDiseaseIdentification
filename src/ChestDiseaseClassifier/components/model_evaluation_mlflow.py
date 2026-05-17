@@ -24,7 +24,7 @@ class Evaluation:
             batch_size=self.config.params_batch_size,
             interpolation="bilinear",
             shuffle=False,
-            class_mode="sparse"   # 🔥 THIS LINE FIXES IT
+            class_mode="sparse"  
         )
 
 
